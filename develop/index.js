@@ -22,7 +22,7 @@ const questions = [
 
     'Add your Github username.',
 
-    'What is your email address?',
+    'What is your email address?'
 
 ];
 
@@ -37,9 +37,54 @@ function init() {
     inquirer
     .prompt([
         {
-        type: 'input',
-        name: 'title',
-        message: questions[0]
+            type: 'input',
+            name: 'title',
+            message: questions[0]
+        },
+        {
+            type: 'input',
+            name: 'desc',
+            message: questions[1]
+        },
+        {
+            type: 'input',
+            name: 'installation',
+            message: questions[2]
+        },
+        {
+            type: 'input',
+            name: 'usage',
+            message: questions[3]
+        },
+        {
+            type: 'input',
+            name: 'license',
+            message: questions[4]
+        },
+        {
+            type: 'input',
+            name: 'credits',
+            message: questions[5]
+        },
+        {
+            type: 'input',
+            name: 'test',
+            message: questions[6]
+        },
+        {
+            type: 'input',
+            name: 'giturl',
+            message: questions[7]
+        },
+        {
+            type: 'input',
+            name: 'gituser',
+            message: questions[8]
+        },
+        {
+            type: 'input',
+            name: 'email',
+            message: questions[9]
         },
     ])
 }
