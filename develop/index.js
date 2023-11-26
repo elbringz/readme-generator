@@ -28,8 +28,7 @@ const questions = [
 
 // TODO: Create a function to write README file
 function writeToFile(fileName, data) {
-    fileName = 'README.md';
-    fs.writeFile(fileName, generateMarkdown(data), (err) => 
+    fs.writeFile(fileName, data, (err) => 
     err ? console.error(err) : console.log('Success!'))
 }
 
@@ -87,7 +86,8 @@ function init() {
             name: 'email',
             message: questions[9]
         },
-    ])
+    ]).then((data) => writeToFile('README.md', generateMarkdown(data)));
+    
 }
 
 // Function call to initialize app

@@ -2,7 +2,7 @@
 // If there is no license, return an empty string
 function renderLicenseBadge(license) {
     if(license) {
-        return '[![License](https://img.shields.io/badge/'+license+'-lightblue.svg)](https://www.boost.org/'+license;
+        return '[![License](https://img.shields.io/badge/'+license+'-lightblue.svg)](https://www.boost.org/'+license+')';
     } else if(!license) {
         return '';
     }
@@ -52,7 +52,7 @@ ${data.email}
 
 ## Tests
 ${data.test}
-`;
+`
 }
 
 module.exports = generateMarkdown;
