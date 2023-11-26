@@ -23,6 +23,35 @@ function generateMarkdown(data) {
 ## Description
 ${data.description}
 
+## Table of Contents
+[Installation](#installation)
+[Credits](#credits)
+[Usage](#usage)
+[License](#license)
+[Contact info](#contact-info)
+
+## Installation
+${data.installation}
+
+## Usage
+${data.usage}
+
+## Credits
+${data.credits}
+
+## License
+${data.license}
+
+## Badges
+${renderLicenseBadge(data.license)}
+
+## Contact-info
+${data.giturl}
+${data.gituser}
+${data.email}
+
+## Tests
+${data.test}
 `;
 }
 

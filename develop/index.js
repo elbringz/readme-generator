@@ -23,10 +23,7 @@ const questions = [
 
     'Add your Github username.',
 
-    'What is your email address?',
-
-    'Would you like to include a table of contents?'
-
+    'What is your email address?'
 ];
 
 // TODO: Create a function to write README file
@@ -90,12 +87,6 @@ function init() {
             name: 'email',
             message: questions[9]
         },
-        {
-            type: 'list',
-            name: 'TOC',
-            message: questions[10],
-            choices: ['Y', 'N']
-        }
     ])
 }
 
